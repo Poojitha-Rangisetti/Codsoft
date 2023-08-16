@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DEEFF1"
+    tools:context=".MainActivity">
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Simple Calculator"
+     android:textSize="30sp"
+     android:gravity="center"
+     android:textColor="#E91E63"
+     android:textStyle="bold|italic"
+     android:background="#00BCD4"
+     android:layout_gravity="center">
+ </TextView>
+    <EditText
+        android:id="@+id/et1"
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter value for A"
+        android:textColor="@color/black"
+        android:textColorHint="#000"
+        android:inputType="number">
+    </EditText>
+    <EditText
+        android:id="@+id/et2"
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter value of B"
+        android:textColor="@color/black"
+        android:textColorHint="#000"
+        android:inputType="number">
+    </EditText>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="10sp"
+          android:onClick="addition"
+          android:text="Add">
+
+      </Button>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="10sp"
+          android:onClick="diff"
+          android:text="Sub">
+
+      </Button>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="10sp"
+          android:onClick="multi"
+          android:text="Mul">
+
+      </Button>
+
+
+   </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="5sp"
+       android:onClick="divide"
+       android:text="Div">
+
+   </Button>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_margin="5sp"
+       android:onClick="modulus"
+       android:text="Mod">
+   </Button>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Result"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_margin="10dp">
+    </TextView>
+</LinearLayout>
